@@ -25,10 +25,16 @@
             android:text="Name" />
 
         <TextView
-            android:id="@+id/age_city"
+            android:id="@+id/country_city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Age, City" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="age" />
     </LinearLayout>
 
 </LinearLayout>

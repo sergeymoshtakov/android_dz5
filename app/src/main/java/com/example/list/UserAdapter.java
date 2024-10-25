@@ -32,11 +32,13 @@ public class UserAdapter extends ArrayAdapter<UserModel> {
 
         ImageView avatar = convertView.findViewById(R.id.avatar);
         TextView name = convertView.findViewById(R.id.name);
-        TextView ageCity = convertView.findViewById(R.id.age_city);
+        TextView ageCity = convertView.findViewById(R.id.country_city);
+        TextView age = convertView.findViewById(R.id.age);
 
         avatar.setImageResource(user.getAvatarId());
         name.setText(user.getFirstName() + " " + user.getLastName());
-        ageCity.setText("Age: " + user.getAge() + ", " + user.getCity());
+        ageCity.setText(user.getCity() + ", " + user.getCountry());
+        age.setText(user.getAge() + " years old");
 
         return convertView;
     }
